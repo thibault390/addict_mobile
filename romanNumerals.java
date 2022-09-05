@@ -17,6 +17,9 @@ public class romanNumerals {
                 result += roman_table[i].repeat(rec);
                 number -= rec * numerical_table[i];
             }
+            else{
+                continue;
+            }
         }
 
         return Integer.toString(my_number) + " ->" + result;
